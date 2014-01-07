@@ -30,11 +30,13 @@ Class HMAC {
   
   public function __construct($data_client,$private_key, $algorithm = 'sha1' , $time_interval_max = 600){
 
-    //Simular diferenca de tempo
+    /* This is a bypass to test time changes.
     $date = date_create(date("Y-m-d H:i:s", time()));
     date_add($date, date_interval_create_from_date_string('+10 min'));
     $this->date_server_received = date_format($date, 'Y-m-d H:i:s');
-
+    */
+    $this->date_server_received = date("Y-m-d H:i:s", time());
+    
     $this->time_interval_max = $time_interval_max;
     $this->algorithm = $algorithm;
 
