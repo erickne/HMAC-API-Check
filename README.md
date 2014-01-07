@@ -10,6 +10,7 @@ Check this link: [Designing a Secure REST (Web) API without OAuth](http://www.th
 
 ### Benefitis ###
 
+This is a safe way to validate requests from clients and prevent [Replay Attacks](http://en.wikipedia.org/wiki/Replay_attack).
 
 ### Usage ###
 
