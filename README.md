@@ -47,9 +47,6 @@ Now it's time to encrypt all values and save in the key ``['hash']``. First sele
 
     $_data_private['hash'] = hash_hmac('sha1', json_encode($_data_private), $user_pvt_key);
       
-Thereafter, clear the private key from your array and you are ready to send to server.
-      
-    unset($_data_private['private_key']);
       
 #### Step 4 : Client validation ####
 
